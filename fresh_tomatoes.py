@@ -1,4 +1,5 @@
 import webbrowser
+chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
 import os
 import re
 
@@ -164,4 +165,4 @@ def open_movies_page(movies):
 
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
-    webbrowser.open('file://' + url, new=2)
+    webbrowser.get(chrome_path).open('file://' + url, new=2)
