@@ -8,6 +8,7 @@ fight_club = media.Movie("Fight Club",
                         "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
                         "https://www.youtube.com/watch?v=BdJKm16Co6M",
                         "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more.")
+# print(fight_club.storyline)
 
 avatar = media.Movie("Avatar",
                      "2h 42min",
@@ -24,6 +25,10 @@ friday = media.Movie("Friday",
                      "https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg",
                      "https://www.youtube.com/watch?v=sujATt9Ur0o",
                      "Two homies, Smokey and Craig, smoke a dope dealer's weed and try to figure a way to get the $200 they owe to the dealer by 10 p.m. that same night.")
+
+# print(avatar.storyline)
+# avatar.show_trailer()
+# friday.show_trailer()
 
 the_matrix = media.Movie("The Matrix",
                          "2h 16min",
@@ -50,5 +55,12 @@ the_shawshank_redemption = media.Movie("The Shawshank Redemption",
                                        "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.")
 
 movies = [fight_club, avatar, friday, the_matrix, rounders, the_shawshank_redemption]
-
+# tv_shows
+# tv_shows = []
 fresh_tomatoes.open_movies_page(movies)
+# print(media.Movie.VALID_RATINGS)
+# print(media.Movie.__doc__)
+
+# print("The name of class I created is " + media.Movie.__name__)
+
+# print("The module is called " + media.Movie.__module__)
